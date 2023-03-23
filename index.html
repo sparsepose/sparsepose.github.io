@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="SparsePose: Sparse-View Camera Pose Regression and Refinement.">
+  <meta name="keywords" content="SparsePose, NeRF">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SparsePose: Sparse-View Camera Pose Regression and Refinement</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">SparsePose: Sparse-View Camera Pose Regression and Refinement</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://samsinha.me">Samarth Sinha</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://jasonyzhang.com/">Jason Y. Zhang</a><sup>2</sup>,</span>
+            <span class="author-block">
+              <a href="https://taiya.github.io/">Andrea Tagliasacchi</a><sup>1,3</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.gilitschenski.org/igor/">Igor Gilitschenski</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://davidlindell.com/">David B. Lindell</a><sup>1</sup>,
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>University of Toronto</span>
+            <span class="author-block"><sup>2</sup>CMU</span>
+            <span class="author-block"><sup>3</sup>SFU, Google</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2211.16991"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Camera pose estimation is a key step in standard 3D reconstruction pipelines that operate
+            on a dense set of images of a single object or scene. However, methods for pose estimation 
+            often fail when only a few images are available because they rely on the ability to robustly 
+            identify and match visual features between image pairs. While these methods can work robustly 
+            with dense camera views, capturing a large set of images can be time-consuming or impractical. 
+          </p>
+          <p>
+            We propose SparsePose for recovering accurate camera poses given a sparse set of wide-baseline 
+            images (fewer than 10). The method learns to regress initial camera poses and then iteratively 
+            refine them after training on a large-scale dataset of objects (Co3D: Common Objects in 3D). 
+            SparsePose significantly outperforms conventional and learning-based baselines in recovering 
+            accurate camera rotations and translations. We also demonstrate our pipeline for high-fidelity 
+            3D reconstruction using only 5-9 images of an object.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>
+        @article{sinha2022sparsepose,
+          title={SparsePose: Sparse-View Camera Pose Regression and Refinement},
+          author={Sinha, Samarth and Zhang, Jason Y and Tagliasacchi, Andrea and Gilitschenski, Igor and Lindell, David B},
+          journal={CVPR},
+          year={2023}
+        }
+</code></pre>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            The template for this website was borrowed from the amazing <a
+              href="https://github.com/nerfies/nerfies.github.io">NeRFies</a> website.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
